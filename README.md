@@ -311,6 +311,7 @@ The script signs in with the supplied session cookie, captures each page at 1440
 ## Current limitations
 
 - Notifications are **in-app only**. Email delivery is intentionally deferred; `RESEND_API_KEY` and `ALERT_FROM_EMAIL` are reserved for that phase.
+- Registration is open and does not require email verification yet. Add verification before opening sign-ups publicly.
 - The response chart shows data only for periods in which checks ran. A new account with a single check displays a single point until more history accumulates.
 - Uptime uses successful checks divided by total checks in the selected window; it does not weight downtime by duration.
 - Monitoring runs from Cloudflare's network, so results reflect that vantage point (a site may be up globally but unreachable from a specific colo).
