@@ -4,6 +4,8 @@ A production-ready website health monitoring SaaS built entirely on Cloudflare's
 
 ![Dashboard](docs/screenshots/dashboard.png)
 
+**Live deployment:** <https://uptime-guard.tholetiharsha2078.workers.dev>
+
 ## Features
 
 - **Website management** — add, rename, pause/resume, and delete monitors with validated public HTTP/HTTPS URLs.
@@ -256,7 +258,7 @@ All endpoints are under `/api`, return JSON, and require a valid session unless 
 npm test
 ```
 
-The suite covers URL validation and private-range detection, HTTP check outcomes (success, 4xx/5xx, timeout, redirects, blocked targets), and core aggregation helpers. All tests run without network access or a live database.
+The suite covers URL validation and private-range detection, HTTP check outcomes (success, 4xx/5xx, timeout, redirects, blocked targets), password hashing, request schemas, and uptime aggregation. All tests run without network access or a live database.
 
 ## Deployment (Cloudflare)
 
